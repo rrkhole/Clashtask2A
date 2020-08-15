@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page3</title>
+</head>
+<body>
+
+<h2>{{message}}</h2>
+
+{% if profile %}
+
+<tr>
+    <td>Name:</td>
+    <td>{{profile.f_name}}</td>
+    </tr>
+<tr>
+    <td>Phone Number:</td>
+    <td>{{profile.ph_no}}</td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>{{profile.gender}}</td>
+
+</tr>
+
+{% endif %}
+<a href="{% url 'page2' %}">Try again</a>
+<a href="{% url 'page1' %}">Register</a>
+</body>
+</html>

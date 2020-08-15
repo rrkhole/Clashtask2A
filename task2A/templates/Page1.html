@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page1</title>
+</head>
+<body>
+<a href="{% url 'page2'%}">Enter</a>
+<form method="post">
+    {% csrf_token %}
+    Enter First Name:
+    <input type="text" name="fname"><br>
+    Enter Last Name:
+    <input type="text" name="lname"><br>
+    Enter Phone number:
+    <input type="number" name="ph_no"><br>
+    Enter Email:
+    <input type="text" name="email"><br>
+    Select Gender:
+    <input type="radio" name="gender" value="Male">Male<br>
+    <input type="radio" name="gender" value="Female">Female<br>
+    <input type="radio" name="gender" value="None">None<br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
